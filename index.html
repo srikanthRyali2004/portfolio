@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYALI SRIKANTH Portfolio</title>
+    <link rel="icon" href="./img/c6Profile.jpg" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+    --primary-color: #1edb01;
+    --secondary-color: #01850e;
+    --font-size0:50px;
+    --font-size1:25px;
+    --font-size2:18px;
+    --font-size3:16px;
+    --text-color:#000000;
+}
+body{
+  padding: 0;margin: 0;
+}
+.dja{display: flex;justify-content: space-between;align-items: center;}
+
+header{
+  height: 70px;width: calc(100% - 80px);
+  padding: 0 50px 0 30px;
+  position: fixed;top: 0;
+  background-color: #ffffff8c;
+  display: flex;justify-content: space-between;align-items: center;
+}
+.Phone_nav{
+    display: none;
+}
+nav a{
+  text-decoration: none;
+}
+nav a{
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: all 1s;
+}
+nav a:hover{
+    background-color: var(--primary-color);
+}
+section{
+    max-height:fit-content;
+  min-height: 90svh;
+  width: calc(100% - 60px);
+  padding: 70px 30px 0;
+  /* height: 100svh; */
+}
+
+.HomePage{
+    display: flex;justify-content: space-between;align-items: center;
+}
+.Homepage-text{
+  height: fit-content;width: calc(100% - 300px);
+}
+
+.HomePage-text-Button1{
+    font-size: var(--font-size2);font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;border: 2px solid var(--primary-color);
+    backdrop-filter: blur(5px);color: var(--primary-color);
+    margin-right: 20px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.HomePage-text-Button1:hover{box-shadow: 2px 2px 5px var(--primary-color);transform: scale(1.08);}
+.HomePage-text-Button2{
+    font-size: var(--font-size2);font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);color: white;
+    transition: all 1s; 
+    cursor: pointer;
+
+}
+.HomePage-text-Button2:hover{transform: scale(1.08);}
+.Homepage-Img{
+  height: 300px;width: 250px;
+}
+
+.SkillsPage{
+  display: flex;justify-content: space-between;align-items: center;
+  flex-wrap: wrap;gap: 20px;
+}
+.Skill-item{
+  max-width:fit-content;
+  height: 100px;min-width: 200px;
+  padding: 5px 10px;border-radius: 10px;
+  background-color: var(--primary-color);
+  display: flex;justify-content: space-between;align-items: center;
+  flex-direction: column;
+}
+.SkillsPage-text{
+    width: 100%;display: flex;justify-content: space-between;align-items: center;gap: 20px;
+}
+.SkillsPage-img{
+    height: 60px;width: 60px;
+    font-size: 50px;
+}
+
+
+
+.ProjectPage{
+    height: fit-content;width: 100%;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-wrap: wrap;gap: 20px;
+}
+.Project-item{
+    border-radius: 10px;
+    max-height:fit-content;
+    min-height: 400px;
+    width: 250px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    display: flex;justify-content: start;align-items: center;
+    flex-direction: column;
+}
+.ProjectPage-text{
+    width: 100%;display: flex;justify-content: space-between;align-items: center;
+}
+.ProjectPage-img{
+    height: 100px;width: 200px;
+}
+.Project-Links{
+ width: 100%;
+ display: flex;justify-content: space-between;align-items: center;
+}
+.About{
+
+}
+.AboutPage{
+    margin-top: 30px;
+    display: flex;flex-direction: column;gap: 20px;
+}
+td{
+    padding: 10px;
+}
+.About-Links{
+    width: fit-content;
+    display: flex;flex-direction: column;gap: 20px;
+}
+.About-Links i{
+    color: var(--secondary-color);
+}
+.About-Links a{
+    text-decoration: none;
+    font-size: var(--font-size2);
+    color: #000;
+}
+
+footer{
+    margin: 30px 0;text-align: center;
+}
+
+.ShowShadow{transition: all 1s;}
+.ShowShadow:hover{filter: drop-shadow(2px 2px 5px var(--primary-color));box-shadow: 2px 2px 10px var(--secondary-color); transform: scale(1.08);cursor: pointer;}
+.ComeFromTop{animation: Come_From_Top 2s forwards;}
+@keyframes Come_From_Top {
+  0%{
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  99%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  100%{}
+}
+
+        @media screen and (max-width:550px){
+            .Phone_nav{
+                display: block;
+            }
+            .laptop-nav{
+                display: none;
+            }
+        section{
+            height: fit-content;
+        }
+        .HomePage{flex-direction: column;gap: 20px;}
+        .Homepage-text{width: 100%};
+        .About-Links{width: 100%;}
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".ShowShadow");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("ComeFromTop");
+          observer.unobserve(entry.target); // Stop observing once animation is applied
+        }
+      });
+    },
+    { threshold: 0.1 } // Adjust threshold as needed
+  );
+
+  elements.forEach((element) => observer.observe(element));
+});
+
+    </script>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>RYALI SRIKANTH</h2>
+            <nav class="laptop-nav">
+                <a href="#Home">Home</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Project">Project</a>
+                <a href="#About">About</a>
+            </nav>
+            <nav class="Phone_nav">
+                <a href="#Home">🏠</a>
+                <a href="#Skills">🧑‍💻</a>
+                <a href="#Project">🧮</a>
+                <a href="#About">👤</a>
+            </nav>
+        </header>
+        <section id="Home" class="HomePage">
+            <div class="Homepage-text">
+                <h2>Driven and innovative 3rd-year B.Tech Computer Science student with hands-on experience in artificial
+intelligence, and machine learning. Strong proficiency in JavaScript, Python, and various other technologies.
+Complemented by exceptional problem-solving skills, an active attitude, and a keen interest in continuous learning
+and development. Prepared to contribute effectively to a dynamic team and make a meaningful impact in the tech
+industry.</h2>
+                <div>
+                    <a><button class="HomePage-text-Button1">View Resume</button></a>
+                    <a><button class="HomePage-text-Button2">Dowload Resume</button></a>
+                </div>
+            </div>
+            <div class="Homepage-Img">
+                <img src="./img/c6Profile.jpg" height="100%" width="100%"/>
+            </div>
+        </section>
+        <section id="Skills" >
+            <h1>Skills</h1>
+            <div class="SkillsPage">
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja "><i class="fa-solid fa-c"></i></div>
+                    <div class="SkillsPage-text"><span>C</span><span>50%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-brands fa-python"></i></div>
+                    <div class="SkillsPage-text"><span>Python</span><span>50%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-solid fa-folder-tree"></i></div>
+                    <div class="SkillsPage-text"><span>Data Structures</span><span>50%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-brands fa-html5"></i></div>
+                    <div class="SkillsPage-text"><span>HTML</span><span>90%</span></div>
+                </div>
+              <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="SkillsPage-text"><span>CSS</span><span>90%</span></div>
+                </div>
+              <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-brands fa-js"></i></div>
+                    <div class="SkillsPage-text"><span>JavaScript</span><span>90%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-solid fa-database"></i></div>
+                    <div class="SkillsPage-text"><span>SQL</span><span>90%</span></div>
+                </div>
+                 <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="SkillsPage-text"><span>Good Communication</span><span>90%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="SkillsPage-text"><span>Leadership</span><span>90%</span></div>
+                </div>
+                <div class="Skill-item ShowShadow">
+                    <div class="SkillsPage-img dja"><i class="fa-solid fa-users"></i></div>
+                    <div class="SkillsPage-text"><span>Team Collaboration</span><span>90%</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="Project">
+            <h1>Project</h1>
+            <div class="ProjectPage">
+                <div class="Project-item ShowShadow">
+                    <div class="ProjectPage-img dja"><img src="./img/interactive-landing-page.jpg" height="100%" width="100%"/></div>
+                    <h3 class="ProjectPage-text">Interactive Landing Page</h3>
+                    <div class="ProjectPage-text">
+                      •Implementing features such as user registration.<br>
+                      •Utilizing CSS and custom CSS for responsive and modern UI design.<br>
+                      •Ensured secure authentication and data handling using modern web technologies.
+                    </div>
+                    <!-- <div class="Project-Links">
+                        <a href=""><button>View Code</button></a>
+                        <a href=""><button>Demo</button></a>
+                    </div> -->
+                </div>
+                <div class="Project-item ShowShadow">
+                    <div class="ProjectPage-img dja"><img src="./img/AI-Internship.jpg" height="100%" width="100%"/></div>
+                    <h3 class="ProjectPage-text">Internship<br>(Artifical Intelligence)</h3>
+                    
+                    <div class="ProjectPage-text">
+                        • Developed and implemented machine learning models for predictive analytics.<br> 
+                        •Conducted data analysis and visualization using Python and TensorFlow.<br>
+                        •Collaborated with a team of industry experts on real-time product development.
+                    </div>
+                    <!-- <div class="Project-Links">
+                        <a href=""><button>View Code</button></a>
+                        <a href=""><button>Demo</button></a>
+                    </div> -->
+                </div>
+                <div class="Project-item ShowShadow">
+                    <div class="ProjectPage-img dja"><img src="./img/Sentimental Analysis.jpg" height="100%" width="100%"/></div>
+                    <h3 class="ProjectPage-text"> Sentimental Analysis <br>(Artificial intelligence & Machine Learning)</h3>
+                    <div class="ProjectPage-text">
+                        •Developed a sentimental analysis model to classify restaurant reviews as positive or negative.
+                    </div>
+                    <!-- <div class="Project-Links">
+                        <a href=""><button>View Code</button></a>
+                        <a href=""><button>Demo</button></a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="About">
+            <h1>About ME</h1>
+            <div class="About-text">
+                <h1>Education</h1>
+                <table border="1" style="margin: 10px;">
+                    <tr style="font-weight: bold;font-size: 20px;"><td>Graduation</td><td>Course</td><td>Collage</td><td>Year</td><td>Percentage</td></tr>
+                    <tr><td>B.tech</td><td>CSE(AI&ML)</td><td>Aditya College of Engineering and Technology</td><td>2022 - 26</td><td>90%</td></tr>
+                    <tr><td>INTERMEDIATE</td><td>MPC</td><td> Narayana Junior College</td><td>2020 - 22</td><td>90%</td></tr>
+                    <tr><td>High School</td><td>10th Class</td><td> Narayana EM School</td><td>2019 - 20</td><td>90%</td></tr>
+                </table>
+            </div>
+            <div class="AboutPage">
+                <h2 style="margin: 0;">Profiles</h2>
+                <div class="About-Links">
+                    <a href="mailto:srikanth5092221@gmail.com"><i class="fa-solid fa-square-envelope"></i> srikanth5092221@gmail.com</a>
+                    <a href="tel:+91 8978900364"><i class="fa-solid fa-phone"></i> +91 897890036</a>
+                    <a href="https://maps.app.goo.gl/PqKJ5zzUfFyqyU6u5"><i class="fa-solid fa-location-dot"></i> Kakinada, Andhra Pradesh, INDIA</a>
+                    <a href="https://www.linkedin.com/in/srikanth-ryali-9999b3315"> <i class="fa-brands fa-linkedin"></i> Linked In</a>
+                    <a href="https://github.com/srikanthRyali2004"> <i class="fa-brands fa-square-github"></i> Git Hub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>&copy;CopyRight JGK</footer> -->
+    <footer>&copy;CopyRight RYALI SRIKANTH</footer>
+</body>
+</html>
